@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+.barra-navegacao {
+    background-color: #f0f0f0;
+    padding: 15px;
+    position: relative;
+}
+
+.faixa-verde {
+    background-color: #0e7900;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.lista-navegacao {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.item-navegacao {
+    margin: 0 50px;
+}
+
+.link-navegacao {
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.link-navegacao:hover {
+    transform: scale(1.1);
+    background-color: #0a5200;
+}
+
+.container-noticia {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Fundo branco para a área de conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de elevação */
+}
+
+.noticia-header h1 {
+    font-size: 28px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.noticia-header h2 {
+    font-size: 20px;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.noticia-dados {
+    font-size: 16px;
+    color: #606060; /* Cinza para data e autor */
+    margin-bottom: 20px;
+}
+
+.noticia-conteudo p {
+    font-size: 18px;
+    color: #333333; /* Texto escuro para melhor legibilidade */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.lista-jogadores {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-jogadores li {
+    font-size: 16px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.noticia-destaques h3 {
+    font-size: 22px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.noticia-destaques p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-noticia {
+        padding: 10px;
+    }
+
+    .noticia-header h1 {
+        font-size: 24px;
+    }
+
+    .noticia-header h2 {
+        font-size: 18px;
+    }
+
+    .noticia-conteudo p {
+        font-size: 16px;
+    }
+
+    .lista-jogadores li {
+        font-size: 14px;
+    }
+
+    .noticia-destaques h3 {
+        font-size: 20px;
+    }
+
+    .noticia-destaques p {
+        font-size: 16px;
+    }
+}
+
+.Div-Noticia {
+    text-align: center;
+}
+
+.ImagemNoticia {
+    height: 500px;
+    width: 700px;
+    display: block;
+}
+
+.Div-Noticia p {
+    width: 700px;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 2px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-cartoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #004d40;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 420px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cartao-jogo {
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #004d40;
+    margin-bottom: 20px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-jogo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.escudo {
+    width: 50px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+a.Video img {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 85px;
+    height: 50px;
+    margin-bottom: 1px;
+}
+
+.time {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.placar {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.cartao-vermelho1 {
+    background-color: red;
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    transform: rotate(150deg);
+    border: 2px solid rgb(133, 0, 0);
+    border-radius: 2px;
+    margin-right: 45px;
+}
+
+.cartao-vermelho2 {
+    background-color: red;
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    transform: rotate(150deg);
+    border: 2px solid rgb(133, 0, 0);
+    border-radius: 2px;
+    margin-right: 55px;
+}
+
+.parte-lateral {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid #5a5a5a;
+    box-shadow: 20px 1px 100px rgba(0, 0, 0, 0.5);
+}
+
+.parte-lateral h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.parte-lateral p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.parte-lateral img {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.barra-lateral {
+    display: none;
+}
+
+.imagem-cartao {
+    width: 100%;
+}
+
+.conteudo-cartao {
+    padding: 15px;
+}
+
+.titulo-cartao {
+    font-size: 20px;
+    color: #004d40;
+}
+
+.texto-cartao {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.container-cartoes-verticais {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao-noticia {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #004d40;
+    padding: 15px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.imagem-noticia-vertical {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.conteudo-noticia-vertical {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.titulo-noticia {
+    font-size: 28px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.texto-noticia {
+    font-size: 20px;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.botao {
+    background-color: #004d40;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; 
+    max-width: fit-content; 
+}
+
+.botao:hover {
+    background-color: #00332e;
+    transform: scale(1.05);
+}
+
+.imagem-noticia-vertical {
+    display: inline-block;
+    height: 220px;
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .container-cartoes {
+        flex-direction: column;
+    }
+
+    .cartao, .cartao-jogo {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-cartoes-verticais {
+        flex-direction: column;
+    }
+
+    .cartao-noticia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
